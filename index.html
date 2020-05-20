@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할로윈.html</title>
+    <style>
+        @font-face {
+            font-family: "csnpwdt NFI";
+            src: url('./font/csnpwdt NFI.ttf');
+        }
+        * {margin: 0; padding: 0;}
+        body{
+            background: #0f2439;
+            width: 1920px;
+            height: 1080px;
+            margin: 0 auto;
+        }
+
+        #bg{
+            width: 1920px;
+            height: 1080px;
+            margin: 0 auto;
+            /* border: 2px solid red; */
+            position: relative;
+        }
+
+        #moon{
+            position: absolute;
+            left: 600px;
+            top: 20px;
+            width: 700px;
+        }
+
+        #witch1{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+
+
+            
+            /* 애니메이션 설정 */
+            animation-name: witch1;  /* 이름 */
+            animation-duration: 4s;  /* 재생시간 */
+            animation-timing-function: ease linear;
+
+            /* 값 : 숫자 | inifinite(무한반복) */
+            animation-iteration-count: infinite;
+
+            /* 방향설정 */
+            /* animation-direction: alternate; */
+        }
+
+         /* 키프레임 */
+         @keyframes witch1{
+            /* 시작 0% */
+            from {
+                bottom: 0px;
+            left: 0px;
+            }
+            to {
+                left: 1400px;
+                bottom: 1100px;
+            }
+        } 
+
+
+
+
+        #witch2{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+
+
+                        
+            /* 애니메이션 설정 */
+            animation-name: witch2;  /* 이름 */
+            animation-duration: 4s;  /* 재생시간 */
+            animation-timing-function: ease linear;
+
+            /* 값 : 숫자 | inifinite(무한반복) */
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+
+            /* 방향설정 */
+            /* animation-direction: alternate; */
+        }
+
+                 /* 키프레임 */
+                 @keyframes witch2{
+            /* 시작 0% */
+            from {
+                bottom: 0px;
+            right: 0px;
+            }
+            to {
+               right: 1400px;
+               bottom: 1100px;
+            }
+        } 
+
+
+
+
+        #cloud_left{
+            position: absolute;
+            left: 20%;
+            top: 15%;
+            width: 20%;
+        }
+
+        #cloud_left1{
+            position: absolute;
+            left: 25%;
+            top: 35%;
+            width: 20%;
+        }
+
+        #cloud_right{
+            position: absolute;
+            right: 15%;
+            width: 15%;
+            top: 20%;
+        }
+
+        #cloud_right1{
+            position: absolute;
+            right: 30%;
+            width: 15%;
+            top: 15%;
+        }
+
+        #cloud_right2{
+            position: absolute;
+            right: 20%;
+            width: 15%;
+            top: 40%;
+        }
+
+        #ground{
+            position: absolute;
+            top: 600px;
+            width: 100%;
+            left: 0px;
+            height: 50%;
+        }
+        #title{
+            position: absolute;
+            color: rgb(255, 238, 0);
+            font-family: csnpwdt NFI;
+            font-weight: normal;
+            font-size:150px;
+            bottom: 130px;
+            left: 650px;
+
+            /* 애니메이션 설정 */
+            animation-name: title;  /* 이름 */
+            animation-duration: 5s;  /* 재생시간 */
+            animation-timing-function: ease linear;
+
+            /* 값 : 숫자 | inifinite(무한반복) */
+            animation-iteration-count: initial;
+
+            /* 방향설정 */
+            /* animation-direction: alternate; */
+        }
+
+ /* 키프레임 */
+        @keyframes title{
+            /* 시작 0% */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        } 
+
+
+    </style>
+</head>
+<body>
+    <section id="bg">
+    <img id="moon" src="images/moon.png" alt="">
+    <img id="witch1" src="images/witch1.png" alt="">
+    <img id="witch2" src="images/witch2.png" alt="">
+    <img id="cloud_left" src="images/cloud_left.png" alt="">
+    <img id="cloud_left1" src="images/cloud_left.png" alt="">
+    <img id="cloud_right" src="images/cloud_right.png" alt="">
+    <img id="cloud_right1" src="images/cloud_right.png" alt="">
+    <img id="cloud_right2" src="images/cloud_right.png" alt="">
+    <img id="ground" src="images/ground.png" alt="">
+    <h1 id="title">HALLOWEEN</h1>
+</section>
+</body>
+</html>
